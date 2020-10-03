@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function outerFunction(){
+        var out=100;
+        function innerFunction(){
+            document.write(out+"</br>");
+        }
+        return innerFunction;
+    }
+    //Here we are calling outerfunction() which doesnot execute inner function 
+    //instead it returns innerfunction() that we are storing in variable=>Inner 
+    //using thet variable we are calling innerfunction
+    var Inner=outerFunction();
+    document.write(Inner+"</br>");
+    Inner();
+    /*
+    Line No=>21 output =>function innerFunction(){ document.write(out+""); }
+    */
+    </script>
+</body>
+</html>

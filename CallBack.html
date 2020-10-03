@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // A Function that is to be executed after another function
+        //has finished executing
+        
+        const perOne=(ptwo)=>{
+            document.write("1st function executed"+"</br>");
+            ptwo();
+        } 
+        const pertwo=()=>{
+            document.write("2st function executed"+"</br>");
+        } 
+        //passing function as reference as argument
+        perOne(pertwo);
+    </script>
+</body>
+</html>

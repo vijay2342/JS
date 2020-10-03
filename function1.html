@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Named function with paramater
+        function add(a,b){
+            document.write((a+b)+"</br>");
+        }
+        add(10,20);
+
+        //Named function with extra paramater
+        function disp(a,b){
+            document.write(arguments[2]+"</br>");
+            document.write((a+b)+"</br>");
+        }
+        disp(10,20,5);
+
+        //passing objcet as parameter
+        var obj=function(objt){
+            document.write(objt.age+objt.college+" "+"</br>");
+        }
+        obj({name:"vijay",
+        age:23,
+        college:"amc"
+        });
+    </script>
+</body>
+</html>

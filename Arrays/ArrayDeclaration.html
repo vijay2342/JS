@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arrays are not fixed in size it can store heterogenous elements
+        //Scenario 1
+        document.write("Student details"+"</br>");
+        var student=["vijay",23,true];
+        for(i=0;i<student.length;i++){
+            document.write(student[i]+"</br>");
+        }
+        //Scenario 2
+        document.write("-----------------------------------"+"</br>");
+        document.write("Cars List"+"</br>");
+        var cars=new Array();
+        cars[0]="maruthi suzuki";
+        cars[1]="BMW";
+        cars[2]="Gallardo";
+        for(j=0;j<cars.length;j++){
+            document.write(cars[j]+"</br>");
+        }
+        //Scenario 3
+        document.write("-----------------------------------"+"</br>");
+        document.write("Vehicles List"+"</br>");
+        var vehicles=new Array();
+        vehicles[0]="maruthi suzuki";
+        vehicles[1]="Hero Honda";
+        vehicles[2]="Truck";
+        for(j=0;j<vehicles.length;j++){
+            document.write(vehicles[j]+"</br>");
+        }
+    </script>
+</body>
+</html>

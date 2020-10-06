@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Bike{
+            constructor(name,price,color){
+                this.name=name;
+                this.price=price;
+                this.color=color;
+            }
+             data() {
+                 document.write("name is: "+this.name+"</br>");
+                 document.write("price is: "+this.price+"</br>");
+                 document.write("color is: "+this.color+"</br>");
+                 document.write("<hr>");
+            }
+        }
+        var b1=new Bike("tvs",50000,"blue");
+        //OR var tvs=new Bike(); 
+        b1.data();
+        var b2=new Bike("honda",150000,"grey");
+        b1.data();
+        var b3=new Bike("activa",65000,"black");
+        b1.data();
+    </script>
+</body>
+</html>

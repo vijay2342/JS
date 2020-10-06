@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Declaration of Object
+        //Scenario 1
+        var person={};
+        person["name"]="Vijay";
+        person["age"]=22;
+        person["place"]="Bangalore";
+        person["study"]=function(){
+            document.write("studying"+"</br>");
+        }
+        person["data"]=function(){
+            document.write("</br>");
+            document.write("Name is: "+person["name"]+"</br>");
+            document.write("Age is: "+person["age"]+"</br>");
+            document.write("place is: "+person["place"]+"</br>");
+        }
+        person["study"]();
+        person["data"]();        
+    </script>
+</body>
+</html>
